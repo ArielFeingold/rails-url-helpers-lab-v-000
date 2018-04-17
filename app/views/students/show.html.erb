@@ -2,7 +2,7 @@
 <%if @student.active == false%>
 
   <p>This student is currently inactive.</p>
-    <%= link_to Activate, activate_student_path(@student) %>
+    <%= link_to Activate, student_path(@student)/activate %>
 <%else%>
   <p>This student is currently active.</p>
     <%= link_to Deactivate, student_path(@student)/activate %>
